@@ -1,0 +1,144 @@
+In Data Structures and Algorithms (DSA), trees are a fundamental concept used to store hierarchical data efficiently. Trees, unlike linear data structures such as arrays or linked lists, are non-linear and provide a hierarchical organization of data.
+
+Key Concepts in Trees:
+
+    Root: The topmost node in a tree.
+
+    Node: Each element in a tree is called a node. A node consists of:
+    Data/Value
+
+    Children: References to other nodes (left, right, or more depending on the type of tree)
+
+    Parent: A node that has references to child nodes.
+
+    Child: A node that is referenced by a parent node.
+
+    Leaf: A node without children.
+
+    Height: The longest path from the root to a leaf.
+
+    Depth: The distance between the root node and a particular node.
+
+Types of Trees
+
+    Binary Tree: Each node has at most two children (left and right).
+
+    Binary Search Tree (BST): A binary tree in which the left child is less than the parent node, and the right child is greater than the parent node.
+
+    AVL Tree: A self-balancing binary search tree where the height difference between left and right subtrees is at most 1.
+
+    N-ary Tree: A tree in which each node can have at most N children.
+
+Basic Tree Operations
+
+    Insertion: Adding nodes to the tree.
+
+    Traversal: Visiting all the nodes in the tree. There are three main types of tree traversal:
+
+        In-order (Left, Root, Right): Left subtree is visited first, followed by the root node, and then the right subtree.
+
+        Pre-order (Root, Left, Right): Root node is visited first, followed by the left subtree and the right subtree.
+
+        Post-order (Left, Right, Root): Left and right subtrees are visited first, followed by the root node.
+
+    Deletion: Removing nodes from the tree.
+
+    Searching: Finding a node in the tree.
+
+BINARY TREES:
+Binary trees are foundational structures in computer science that organize data in a hierarchical manner, with each node having at most two children. There are several types of binary trees, each with unique properties that serve different purposes in algorithms and data handling. Here, we'll cover the main types, including definitions, diagrams, and code implementations.
+
+1. Full Binary Tree
+    A Full Binary Tree is a type of binary tree where every node has either 0 or 2 children. In other words, no node has only one child.
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+
+2. Perfect Binary Tree
+A Perfect Binary Tree is a tree in which all the internal nodes have exactly two children, and all leaf nodes are at the same level. This type of tree is both full and complete.
+
+        1
+       / \
+      2   3
+     / \ / \
+    4  5 6  7
+
+3. Complete Binary Tree
+A Complete Binary Tree is a binary tree in which all levels are completely filled except possibly the last level, which is filled from left to right.
+
+        1
+       / \
+      2   3
+     / \ /
+    4  5 6
+
+4. Balanced Binary Tree
+A Balanced Binary Tree is a tree where the height difference between the left and right subtrees of any node is no more than one.
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+
+5. Degenerate (Skewed) Binary Tree
+A Degenerate Binary Tree is a tree where each parent node has only one child. This creates a structure similar to a linked list.
+
+Left-Skewed Diagram:
+
+    1               
+   /
+  2
+ /
+3
+
+Right-Skewed Diagram:
+
+1
+ \
+  2
+   \
+    3
+
+
+6. Balanced Search Tree (AVL Tree)
+An AVL Tree is a self-balancing binary search tree where the height difference between the left and right subtrees is at most one for all nodes.
+
+        30
+       /  \
+     20    40
+    /  \
+   10  25
+
+Summary of Binary Tree Types:
+
+    Full Binary Tree: Every node has 0 or 2 children.
+
+    Perfect Binary Tree: All internal nodes have two children, and all leaves are at the same level.
+
+    Complete Binary Tree: All levels are fully filled except possibly the last, which is filled from left to right.
+
+    Balanced Binary Tree: The height difference between left and right subtrees is at most one.
+
+    Degenerate Binary Tree: Every parent node has only one child, resembling a linked list.
+
+    AVL Tree: A self-balancing binary search tree where the difference in height between the left and right subtrees is at most one.
+
+    Each of these trees serves different use cases in data structures and algorithms, helping in maintaining efficiency for different operations like search, insert, and delete.
+
+
+BST:
+    A Binary Search Tree is a specialized binary tree where the left child of a node is always smaller than the node, and the right child is always larger.
+
+    BST Operations:
+    Insertion: Insert a node in the BST while maintaining the BST property.
+    Search: Search for a node with a given value.
+            5
+       / \
+      3   7
+     / \ / \
+    2  4 6  8
+
